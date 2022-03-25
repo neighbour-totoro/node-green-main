@@ -1,0 +1,107 @@
+@import '_theme';
+@import '_elements';
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	background-color: white;
+	position: relative;
+	font-family:Sans-Serif;
+	width:100%;
+	min-height:100vh;
+}
+
+
+%landing-container{
+	min-height: 100vh;
+	width: 100%;
+    align-items: center;
+
+    @media (max-width: 991px){
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 767px){
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 575px){
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.head-container{
+    @extend %landing-container;
+	display:grid;
+    background: url('./img/default_bg_head.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 	
+	font-family:'TT Rounds Neue Cond';
+	grid-template-columns:20% 60% 20%;
+	grid-template-rows:1fr;	
+	grid-gap:0px;
+	color: $light-color;
+    padding:0px;
+
+    &-item{
+        display: grid;
+        padding: 10px;
+        text-align:center;
+        align-content: center;
+    
+        @media (max-width: 575px){
+                padding: 0px;
+            }
+    }
+
+    @media (max-width: 991px){   
+        grid-gap:0px;
+        grid-template-columns: 15% auto 15%;
+    }
+    
+    @media (max-width: 767px){
+        grid-gap:0px;
+        grid-template-columns: 10% auto 10%;
+    }
+    
+    @media (max-width: 575px){
+        grid-gap:0px;
+        grid-template-columns: 10% auto 10%;
+    }
+}
+
+.landing-page{
+    @extend %landing-container;
+    padding: 5% 10% 5% 10%;
+	
+}
+
+.footer{
+	font: 1.2em sans-serif;
+	color: $light-color;
+
+    div{
+        max-width:1250;
+        margin-bottom:auto;
+        margin-top:auto;
+    }
+
+    a{
+        text-decoration:none;
+        color:#e8e7e3;
+    }
+
+    a:hover{
+        color:#ffc800;
+    }
+}

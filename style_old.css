@@ -1,0 +1,248 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	background-color: white;
+	position: relative;
+	font-family:Sans-Serif;
+	width:100%;
+	min-height:100vh;
+}
+
+.main-menu{
+	font-family:Sans-Serif;
+	font-size: 1.3rem;
+	background-color:#646466;
+    padding:10px;
+}
+
+.main-menu a.navbar-brand{
+	font-size: 1.3rem;
+}
+
+.main-menu div.container-fluid{
+	max-width:1300px;
+}
+
+
+.head-container{
+	display:grid;
+    background: url('./img/default_bg_head.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 	
+	font-family:'TT Rounds Neue Cond';
+	grid-template-columns:20% 60% 20%;
+	grid-template-rows:1fr;	
+	grid-gap:0px;
+	height:100vh;
+	color: #ffffff;
+}
+
+.head-container-item{
+	display: grid;
+	padding: 10px;
+	text-align:center;
+	align-content: center;
+}
+
+.head-container-item button{
+	width: 200px;
+	height: 50px;
+	padding: 10px;
+}
+
+.landing-container{
+	min-height: 100vh;
+	width: 100%;
+	padding: 5% 10% 5% 10%;
+	align-items: center;
+}
+
+
+.footer{
+	font: 1.2em sans-serif;
+	color: #fff;
+}
+
+.footer div{
+	max-width:1250;
+	margin-bottom:auto;
+	margin-top:auto;
+}
+
+.footer a{
+	text-decoration:none;
+    color:#e8e7e3;
+}
+
+.footer a:hover{
+	color:#ffc800;
+}
+
+.bg-chocolate{
+	background-color: #66452b;
+	color:#fff;
+}
+
+/* Типография */
+.display-5{
+	font-size: 2.4rem;
+}
+
+.font-sero-pro{
+	font-family:'SeroPro';
+}
+
+.lead-2{
+	font-size: 1.55rem;
+}
+
+@font-face {
+    font-family: 'TT Rounds Neue Cond';
+    src: url('fonts/TTRoundsNeue-CondMedium.eot');
+    src: local('fonts/TT Rounds Neue Condensed Medium'), local('TTRoundsNeue-CondMedium'),
+        url('fonts/TTRoundsNeue-CondMedium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTRoundsNeue-CondMedium.woff2') format('woff2'),
+        url('fonts/TTRoundsNeue-CondMedium.woff') format('woff'),
+        url('fonts/TTRoundsNeue-CondMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeroPro';
+    src: url('fonts/SeroPro-light.eot');
+    src: local('fonts/SeroPro-light'),
+        url('fonts/SeroPro-light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SeroPro-light.woff2') format('woff2'),
+        url('fonts/SeroPro-light.woff') format('woff'),
+        url('fonts/SeroPro-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+  
+.card-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	width:100%;
+	max-width: 1500px;
+}
+
+.card-container-item{
+	display: grid;
+	background-color: #fff;
+	width: 100%;
+	min-height: 5em;
+	border: 1px solid #b5b5b6;
+	border-radius: 5px;
+}
+
+.card-container-item .title{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 1.35rem;
+   color:#7a7a7a;
+   padding: 10px 15px 5px 15px;
+   text-decoration: none;
+   font-weight: 400;
+}
+
+.card-container-item .title:hover{
+   color:#bf6600;
+}
+
+.card-container-item .image{
+   width: 100%;
+   height: 200px;
+   object-fit:cover;
+}
+
+.card-container-item .content{
+   padding: 5px 12px 5px 12px;
+   color: #7a7a7a;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 1.1rem;
+}
+
+.card-container-item .footer{
+	width:100%;
+	margin-bottom:5px;
+}
+
+.card-container-item .footer a{
+	text-decoration: none;
+	font-size: 1.1rem;
+    color:#0063e6;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.card-container-item .footer a:hover{
+	text-decoration: none;
+    color:#5b5c5e;
+}
+
+
+@media (max-width: 991px){
+	.card-container{
+		grid-template-columns: 49% 49%;
+		grid-gap: 2%;
+	}
+
+	.head-container{
+		grid-gap:0px;
+		grid-template-columns: 15% auto 15%;
+	}
+
+	.landing-container{
+		margin-top:10px;
+		margin-bottom: 10px;
+
+	}
+}
+
+@media (max-width: 767px){
+	.card-container{
+		grid-template-columns: 100%;
+	}
+
+	.head-container{
+		grid-gap:0px;
+		grid-template-columns: 10% auto 10%;
+	}
+
+	.landing-container{
+		margin-top:10px;
+		margin-bottom: 10px;
+
+	}
+}
+
+
+@media (max-width: 575px){
+	.card-container{
+		grid-template-columns: 100%;
+	}
+
+	.head-container{
+		grid-gap:0px;
+		grid-template-columns: 10% auto 10%;
+	}
+	
+	.head-container-item{
+		padding: 0px;
+	}
+
+	.landing-container{
+		margin-top:10px;
+		margin-bottom: 10px;
+
+	}
+}

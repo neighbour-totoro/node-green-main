@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'TT Rounds Neue Cond';
+    src: url('fonts/TTRoundsNeue-CondMedium.eot');
+    src: local('fonts/TT Rounds Neue Condensed Medium'), local('TTRoundsNeue-CondMedium'),
+        url('fonts/TTRoundsNeue-CondMedium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTRoundsNeue-CondMedium.woff2') format('woff2'),
+        url('fonts/TTRoundsNeue-CondMedium.woff') format('woff'),
+        url('fonts/TTRoundsNeue-CondMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeroPro';
+    src: url('fonts/SeroPro-light.eot');
+    src: local('fonts/SeroPro-light'),
+        url('fonts/SeroPro-light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SeroPro-light.woff2') format('woff2'),
+        url('fonts/SeroPro-light.woff') format('woff'),
+        url('fonts/SeroPro-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+$main-color:#aaeba4;
+$second-color:#aaeba4;
+$light-color:#f5f5f5;
+$dark-color:#694738;
+$main-font:'SeroPro';
+$reserve-font:'TT Rounds Neue Cond';
