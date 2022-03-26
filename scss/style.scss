@@ -16,7 +16,7 @@ body{
 }
 
 
-%landing-container{
+@mixin landing-container{
 	min-height: 100vh;
 	width: 100%;
     align-items: center;
@@ -39,7 +39,7 @@ body{
 }
 
 .head-container{
-    @extend %landing-container;
+    @include landing-container;
 	display:grid;
     background: url('./img/default_bg_head.jpg') no-repeat;
 	-webkit-background-size: cover;
@@ -78,10 +78,21 @@ body{
         grid-gap:0px;
         grid-template-columns: 10% auto 10%;
     }
+
+    &-link{
+        color: #e8e7e3;
+        font-size: 1.4rem;
+        text-decoration: underline;
+
+        &:hover{
+          text-decoration: none;
+          color: #e8e7e3;
+        }
+    }
 }
 
 .landing-page{
-    @extend %landing-container;
+    @include landing-container;
     padding: 5% 10% 5% 10%;
 	
 }
